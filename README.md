@@ -4,6 +4,8 @@
 
 This repository contains a collection of beginner-friendly React projects that help make learning React an enjoyable and practical experience. Each project focuses on common tasks and components often seen in real-world applications and company interviews. These projects can serve as useful references, especially for those preparing for interviews or looking to strengthen their React skills. We encourage you to explore, modify, and contribute to this repository. Your ideas and improvements can benefit the whole community and inspire others!
 
+![react-logo](https://creativebits.org/wp-content/uploads/2023/07/8mx2wdq04h271.png)
+
 ## Tech Stack
 
 This repository uses the following technologies and tools:
@@ -84,7 +86,6 @@ Here are some of the projects currently available in this repository:
   - Responsive and easy-to-use UI
 - **Technologies Used:** React, Tailwind CSS
 
----
 
 ## Contribution
 
