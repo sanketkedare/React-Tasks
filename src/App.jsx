@@ -9,7 +9,7 @@ function App() {
    
       <Routes>
         <Route path="/" element={<Projects />}>
-          <Route path="/password-genrator" element={<PasswordGenrator />} />
+          <Route path="/password-generator" element={<PasswordGenrator />} />
           <Route path="/todo-list" element={<ToDo />} />
         </Route>
       </Routes>

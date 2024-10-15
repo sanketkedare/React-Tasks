@@ -1,7 +1,7 @@
 [
     {
-        "name": "Password Genrator",
-        "path": "password-genrator",
+        "name": "Password Generator",
+        "path": "password-generator",
         "des": "Built with React, Vite, and Tailwind CSS, allows users to generate customized passwords based on their desired length and complexity. Users can select from multiple character combinations, including alphabet-only, number-character, symbol-character, and symbol-character-number combinations. The app provides a quick and secure way to create strong, unique passwords, tailored to individual needs for enhanced security."
 
 
