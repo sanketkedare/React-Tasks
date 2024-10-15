@@ -40,7 +40,6 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Rotate animation on the react icon */}
           <motion.div
             className="fixed w-[30%] h-[60vh] top-24 right-16 shadow-sm rounded-full flex justify-center items-center"
             animate={{ rotate: -360}}

@@ -4,6 +4,10 @@
 
 This repository contains a collection of beginner-friendly React projects that help make learning React an enjoyable and practical experience. Each project focuses on common tasks and components often seen in real-world applications and company interviews. These projects can serve as useful references, especially for those preparing for interviews or looking to strengthen their React skills. We encourage you to explore, modify, and contribute to this repository. Your ideas and improvements can benefit the whole community and inspire others!
 
+**Deployed Link:** [Click here to view the project](https://simple-react-projects.onrender.com)
+
+
+
 ![react-logo](https://creativebits.org/wp-content/uploads/2023/07/8mx2wdq04h271.png)
 
 ## Tech Stack
