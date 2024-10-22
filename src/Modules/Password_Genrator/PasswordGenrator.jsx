@@ -1,7 +1,3 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { BiHome } from "react-icons/bi";
-import { Link } from "react-router-dom";
-
 const PasswordGenrator = () => {
   const [password, setPassword] = useState("");
   const passRef = useRef(null);

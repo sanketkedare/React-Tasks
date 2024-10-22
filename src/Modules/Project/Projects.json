@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Password Generator",
+        "path": "password-generator",
+        "des": "Built with React, Vite, and Tailwind CSS, allows users to generate customized passwords based on their desired length and complexity. Users can select from multiple character combinations, including alphabet-only, number-character, symbol-character, and symbol-character-number combinations. The app provides a quick and secure way to create strong, unique passwords, tailored to individual needs for enhanced security."
+    },
+    {
+        "name": "To-Do List",
+        "path": "todo-list",
+        "des": "A simple yet powerful interface for managing daily tasks. Users can easily add new tasks, edit existing ones, and delete completed or unnecessary items. The project utilizes React for its component-based structure, enabling efficient task updates, while Vite ensures fast builds and a streamlined development experience."
+    },
+    {
+        "name": "Comment Section",
+        "path": "comment-section",
+        "des": "This project involves building an interactive platform designed for sharing insights and opinions on technology. Users can post their thoughts, discuss trends, or review the latest advancements. The interface allows others to engage by showing appreciation, providing constructive criticism, and suggesting improvements or additional perspective."
+    },
+    {
+        "name": "Shooting Guns",
+        "path": "shooting-guns",
+        "des": "We have created three guns based on the concepts of debouncing and throttling, each shooting bullets according to its function logic. The first is a normal gun, the second uses throttling logic, and the third implements debounce logic. This logic applies to the bullets' behavior. The UI is simple yet effectively demonstrates the JavaScript concepts of debouncing and throttling in an engaging way."
+    }
+]
