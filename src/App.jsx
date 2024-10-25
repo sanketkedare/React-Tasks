@@ -4,6 +4,7 @@ import ToDo from "./Modules/To-Do_List/ToDo";
 import Comment from "./Modules/Comment/comment";
 import Projects from "./Modules/Project/Projects";
 import ShootingGuns from "./Modules/Shooting_Guns/ShootingGuns";
+import DiwaliGifts from "./Modules/DiWaliGifts/DiwaliGifts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/todo-list" element={<ToDo />} />
           <Route path='/comment-section' element={<Comment/>}/>
           <Route path="/shooting-guns" element={<ShootingGuns/>}/>
+          <Route path="/diwali-gifts" element={<DiwaliGifts/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

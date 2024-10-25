@@ -18,5 +18,10 @@
         "name": "Shooting Guns",
         "path": "shooting-guns",
         "des": "We have created three guns based on the concepts of debouncing and throttling, each shooting bullets according to its function logic. The first is a normal gun, the second uses throttling logic, and the third implements debounce logic. This logic applies to the bullets' behavior. The UI is simple yet effectively demonstrates the JavaScript concepts of debouncing and throttling in an engaging way."
+    },
+    {
+        "name": "Diwali Gifts",
+        "path": "diwali-gifts",
+        "des": " Created an interactive interface to assign Diwali gifts to friends and family. The interface allows users to shuffle and assign gifts, with a reset option to start over if needed. Once a gift is assigned, it cannot be reassigned until reset, ensuring each person receives a unique present. The UI is built with React.js, with core logic implemented in JavaScript."
     }
 ]

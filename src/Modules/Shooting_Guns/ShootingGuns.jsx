@@ -1,31 +1,52 @@
 import { debounce, throttle } from "lodash";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { GiM3GreaseGun } from "react-icons/gi";
 
 const ShootingGuns = () => {
+
+  const  [triggerPressed, setTriggerPress] = useState(false);
+
   const [shootCount, setShoutCount] = useState(0);
   const [t_shoutCount, setT_shoutCount] = useState(0);
   const [d_shoutCount, setD_shoutCount] = useState(0);
 
-  const handleDebouncedClick = useCallback(
-    debounce(() => {
-      setD_shoutCount((prevCount) => prevCount + 1);
-    }, 2000),
-    [] 
-  );
+  // const handleDebouncedClick = useCallback(
+  //   debounce(() => {
+  //     setD_shoutCount((prevCount) => prevCount + 1);
+  //   }, 2000),
+  //   []
+  // );
 
-  const handleThrottledClick = useCallback(
-    throttle(() => {
-      setT_shoutCount((prevCount) => prevCount + 1);
-    }, 2000),
-    []
-  );
+  // const handleThrottledClick = useCallback(
+  //   throttle(() => {
+  //     setT_shoutCount((prevCount) => prevCount + 1);
+  //   }, 2000),
+  //   []
+  // );
 
-  const bulletHandeler = () => {
-    setShoutCount((prev) => prev + 1);
-    handleThrottledClick();
-    handleDebouncedClick();
-  };
+  // const bulletHandeler = () => {
+  //   setShoutCount((prev) => prev + 1);
+  //   handleThrottledClick();
+  //   handleDebouncedClick();
+  // };
+
+  const deBounce = () =>
+  {
+
+  }
+
+  const bulletHandeler = () =>
+  {
+    
+
+  }
+
+  useEffect(()=>{
+   let timer = setTimeout(()=>{
+    
+
+   },2000)
+  },[])
 
   return (
     <div className="w-[80%] m-auto mt-10">
