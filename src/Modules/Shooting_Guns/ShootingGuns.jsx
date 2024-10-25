@@ -1,102 +1,99 @@
-import { debounce, throttle } from "lodash";
-import React, { useCallback, useEffect, useState } from "react";
-import { GiM3GreaseGun } from "react-icons/gi";
+import React, { useCallback, useState } from "react";
+import SingleGun from "./SingleGun";
+
+/**
+ * ShootingGuns Component
+ *
+ * This component simulates shooting actions with three types of guns:
+ * - Normal Gun: Fires every time the button is clicked, without restrictions.
+ * - Throttling Gun: Fires at most once every 2 seconds, even if the button is clicked multiple times.
+ * - Debouncing Gun: Fires only after 2 seconds of inactivity, meaning it ignores rapid clicks.
+ *
+ * The "Shoot Here" button allows the user to trigger all three guns, demonstrating
+ * how throttling and debouncing techniques work by showing distinct shot counts for each.
+ *
+ * State:
+ * - totalShots: Tracks shots fired by the Normal Gun.
+ * - throttleShots: Tracks shots fired by the Throttling Gun.
+ * - debounceShots: Tracks shots fired by the Debouncing Gun.
+ *
+ * Functions:
+ * - handleBulletShot: Handles button click, updating the shot counts.
+ * - handleThrottle: Implements throttling (limits firing frequency).
+ * - handleDebounce: Implements debouncing (waits for inactivity before firing).
+ */
 
 const ShootingGuns = () => {
+  // State to track total shots fired
+  const [totalShots, setTotalShots] = useState(0);
+  // State to track shots fired with throttling mechanism
+  const [throttleShots, setThrottleShots] = useState(0);
+  // State to track shots fired with debouncing mechanism
+  const [debounceShots, setDebounceShots] = useState(0);
 
-  const  [triggerPressed, setTriggerPress] = useState(false);
+  // Timer references for throttling and debouncing
+  let throttleTimeout;
+  let debounceTimeout;
 
-  const [shootCount, setShoutCount] = useState(0);
-  const [t_shoutCount, setT_shoutCount] = useState(0);
-  const [d_shoutCount, setD_shoutCount] = useState(0);
+  // Debounce handler: increments debounceShots after 2 seconds of inactivity
+  const handleDebounce = useCallback(() => {
+    clearTimeout(debounceTimeout); // Clear previous timer
+    debounceTimeout = setTimeout(() => {
+      setDebounceShots(debounceShots + 1); // Increment debounce count
+    }, 1000);
+  }, [debounceShots]);
 
-  // const handleDebouncedClick = useCallback(
-  //   debounce(() => {
-  //     setD_shoutCount((prevCount) => prevCount + 1);
-  //   }, 2000),
-  //   []
-  // );
+  // Throttle handler: increments throttleShots at most once every 2 seconds
+  const handleThrottle = () => {
+    if (throttleTimeout) return; // If timer exists, skip increment
+    throttleTimeout = setTimeout(() => {
+      setThrottleShots(throttleShots + 1); // Increment throttle count
+      clearTimeout(throttleTimeout); // Clear throttle timer
+    }, 1000);
+  };
 
-  // const handleThrottledClick = useCallback(
-  //   throttle(() => {
-  //     setT_shoutCount((prevCount) => prevCount + 1);
-  //   }, 2000),
-  //   []
-  // );
-
-  // const bulletHandeler = () => {
-  //   setShoutCount((prev) => prev + 1);
-  //   handleThrottledClick();
-  //   handleDebouncedClick();
-  // };
-
-  const deBounce = () =>
-  {
-
-  }
-
-  const bulletHandeler = () =>
-  {
-    
-
-  }
-
-  useEffect(()=>{
-   let timer = setTimeout(()=>{
-    
-
-   },2000)
-  },[])
+  // Main handler for bullet shots: increments totalShots and triggers throttle and debounce
+  const handleBulletShot = () => {
+    setTotalShots((prev) => prev + 1); // Increment total shots
+    handleThrottle(); // Trigger throttled shot
+    handleDebounce(); // Trigger debounced shot
+  };
 
   return (
     <div className="w-[80%] m-auto mt-10">
       <h1 className="text-3xl font-semibold">Shooting Guns</h1>
-      <h2 className="mt-10">Total Shoot = {shootCount}</h2>
-      <div className="p-2 mt-10 grid grid-cols-5">
+      <div className="p-2 mt-4 grid grid-cols-4">
         <div className="grid-cols-1 flex flex-row items-center">
+          {/* Button to trigger bullet shots */}
+          <span className="text-xl">Trigger </span>
           <span
-            onClick={bulletHandeler}
-            className="w-[70px] h-[70px] rounded-full bg-red-400 hover:bg-blue-500 cursor-pointer flex justify-center items-center p-2 text-black font-bold"
-          ></span>
+            onClick={handleBulletShot}
+            className="w-[70px] h-[70px] m-1 rounded-full bg-red-400 hover:bg-blue-500 cursor-pointer flex justify-center items-center p-2 text-black font-bold"
+          >
+          </span>
         </div>
 
-        <div className="col-span-4 ">
-          {/* Normal Gun */}
-          <div className="h-[150px]">
-            <h2 className="font-bold bg-yellow-400 text-black w-[200px] p-2 my-2 text-center rounded-xl">
-              Normal Gun
-            </h2>
-            <div className="flex items-center gap-10 ">
-              <GiM3GreaseGun className="text-[100px] mx-5 text-center" />
-              <span className="font-bold bg-sky-300 text-black p-4 rounded-xl w-[300px] text-center">
-                Bullet shoot: {shootCount}
-              </span>
-            </div>
-          </div>
-          {/* Throttling Gun */}
-          <div className="h-[150px]">
-            <h2 className="font-bold bg-yellow-400 text-black w-[200px] p-2 my-2 text-center rounded-xl">
-              Throttling Gun
-            </h2>
-            <div className="flex items-center gap-10">
-              <GiM3GreaseGun className="text-[100px] mx-5 text-center" />
-              <span className="font-bold bg-sky-300 text-black p-4 rounded-xl w-[300px] text-center">
-                Bullet shoot:{t_shoutCount}
-              </span>
-            </div>
-          </div>
-          {/* Debouncing Gun */}
-          <div className="h-[150px]">
-            <h2 className="font-bold bg-yellow-400 text-black w-[200px] p-2 my-2 text-center rounded-xl">
-              Debouncing Gun
-            </h2>
-            <div className="flex items-center gap-10">
-              <GiM3GreaseGun className="text-[100px] mx-5 text-center" />
-              <span className="font-bold bg-sky-300 text-black p-4 rounded-xl w-[300px] text-center">
-                Bullet shoot:{d_shoutCount}
-              </span>
-            </div>
-          </div>
+        <div className="col-span-3 ">
+          {/* Display for Normal Gun with total shot count */}
+          <SingleGun
+            type={"Normal Gun"}
+            shots={totalShots}
+            message={"Shoots every time you click the button."}
+          />
+
+          {/* Display for Throttling Gun with throttle shot count */}
+          <SingleGun
+            type={" Throttling Gun"}
+            shots={throttleShots}
+            message={"Shoots at most once every 1 seconds, even if you click multiple times." }
+          />
+
+          {/* Display for Debouncing Gun with debounce shot count */}
+          <SingleGun
+            type={"Debouncing Gun"}
+            shots={debounceShots}
+            message={"Shoots only after 1 seconds of inactivity, ignoring rapid clicks."}
+          />
         </div>
       </div>
     </div>
