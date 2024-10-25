@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PasswordGenrator from "./Modules/Password_Genrator/PasswordGenrator";
 import ToDo from "./Modules/To-Do_List/ToDo";
-import Comment from "./Modules/Comment/comment";
+import Comment from "./Modules/Comment/Comment";
 import Projects from "./Modules/Project/Projects";
 import ShootingGuns from "./Modules/Shooting_Guns/ShootingGuns";
 import DiwaliGifts from "./Modules/DiWaliGifts/DiwaliGifts";
