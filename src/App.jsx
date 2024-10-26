@@ -4,8 +4,8 @@ import ToDo from "./Modules/To-Do_List/ToDo.jsx";
 import Comment from "./Modules/Comment/Comment.jsx";
 import Projects from "./Project/Projects.jsx";
 import ShootingGuns from "./Modules/Shooting_Guns/ShootingGuns.jsx";
-import DiwaliGifts from "./Modules/DiWaliGifts/DiwaliGifts.jsx";
 import TicTacToe from "./Modules/TicTacToe/TicTacToe.jsx";
+import DiwaliGifts from "./Modules/DiWaliGifts/DiwaliGifts.jsx";
 
 /**
  * App Component
