@@ -9,7 +9,7 @@ const MyForm = ({ setAllToDos }) => {
       id: useGenrateId(),
       createdAt: Date.now(),
       name: toDo,
-      progress: "UPCOMING", // Default progress : "UPCOMING"
+      progress: "UPCOMING", // Default progress
     };
 
     setAllToDos((prev) => [...prev, obj]);
@@ -21,14 +21,14 @@ const MyForm = ({ setAllToDos }) => {
   return (
     <form
       onSubmit={(e) => e.preventDefault()}
-      className="w-full border p-5 mt-5 rounded-xl"
+      className="w-full border p-5 lg:mt-5 mt-10 rounded-xl"
     >
       <input
         onChange={(e) => setToDo(e.target.value)}
         value={toDo}
         type="text"
         className="w-full px-5 p-2 text-black font-semibold h-[50px] rounded-xl"
-        placeholder="Create Your Task! "
+        placeholder="Create Your Task!"
       />
       <div className="flex justify-between gap-2">
         <button
@@ -42,7 +42,7 @@ const MyForm = ({ setAllToDos }) => {
         <button
           disabled={!toDo}
           type="reset"
-          className="p-2 mt-2  w-1/2 bg-red-600 rounded-xl text-white hover:text-black font-bold hover:bg-sky-500"
+          className="p-2 mt-2 w-1/2 bg-red-600 rounded-xl text-white hover:text-black font-bold hover:bg-sky-500"
           onClick={resetTodo}
         >
           Reset

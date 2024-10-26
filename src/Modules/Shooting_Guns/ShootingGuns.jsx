@@ -61,19 +61,19 @@ const ShootingGuns = () => {
 
   return (
     <div className="w-[80%] m-auto mt-10">
-      <h1 className="text-3xl font-semibold">Shooting Guns</h1>
-      <div className="p-2 mt-4 grid grid-cols-4">
+      <h1 className="lg:text-3xl text-xl text-center font-semibold">Shooting Guns</h1>
+      <div className="p-2 mt-4 grid lg:grid-cols-4">
         <div className="grid-cols-1 flex flex-row items-center">
           {/* Button to trigger bullet shots */}
-          <span className="text-xl">Trigger </span>
+          <span className="text-xl">Trigger {" "}</span>
           <span
             onClick={handleBulletShot}
-            className="w-[70px] h-[70px] m-1 rounded-full bg-red-400 hover:bg-blue-500 cursor-pointer flex justify-center items-center p-2 text-black font-bold"
+            className="lg:w-[70px] w-[50px] h-[50px] lg:h-[70px] m-2 rounded-full bg-red-400 hover:bg-blue-500 cursor-pointer flex justify-center items-center p-2 text-black font-bold"
           >
           </span>
         </div>
 
-        <div className="col-span-3 ">
+        <div className="lg:col-span-3 ">
           {/* Display for Normal Gun with total shot count */}
           <SingleGun
             type={"Normal Gun"}

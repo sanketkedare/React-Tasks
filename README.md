@@ -6,8 +6,6 @@ This repository contains a collection of beginner-friendly React projects that h
 
 **Deployed Link:** [Click here to view the project](https://simple-react-projects.onrender.com)
 
-
-
 ![react-logo](https://creativebits.org/wp-content/uploads/2023/07/8mx2wdq04h271.png)
 
 ## Tech Stack
@@ -29,6 +27,7 @@ project-root
 │   ├── Modules                 # Contains all the project modules
 │   │   ├── Password_Generator  # Password generator project files
 │   │   ├── To-Do_List          # To-do list project files
+│   │   ├── TicTacToe           # Tic Tac Toe project files
 │   │   ├── Projects.json       # JSON file containing project data
 │   │   ├── ProjectCart.jsx     # Project list card component
 │   │   └── Project.jsx         # Main project component
@@ -75,20 +74,52 @@ To set up the projects locally and start exploring, follow these steps:
 Here are some of the projects currently available in this repository:
 
 ### 1. Password Generator
-- **Description:** This tool generates secure passwords based on user input. Users can customize password length and select criteria such as including characters, numbers, symbols, or a combination. Great for privacy-conscious users and those interested in web security.
+- **Description:** Built with React, Vite, and Tailwind CSS, this tool helps users create secure passwords based on preferred length and complexity. Users can customize combinations, including letters-only, numbers and letters, symbols and letters, or a mix, providing a flexible solution for generating strong, unique passwords.
 - **Features:**
   - Dynamic length selector
-  - Toggle options for characters, numbers, and symbols
+  - Toggle options for letters, numbers, and symbols
   - Copy generated password to clipboard
 - **Technologies Used:** React, Vite, Tailwind CSS
 
 ### 2. To-Do List
-- **Description:** A simple yet functional to-do list application that helps users manage daily tasks. Users can add new tasks, mark tasks as complete, and delete tasks once they're done.
+- **Description:** A streamlined interface for managing daily tasks, allowing users to add, edit, and remove tasks as needed. Built with React, the project utilizes a component-based architecture for efficient task management, with Vite enhancing development speed.
 - **Features:**
-  - Add, delete, and toggle complete status on tasks
+  - Add, delete, and toggle completion on tasks
   - Clear completed tasks button
-  - Responsive and easy-to-use UI
+  - Responsive and user-friendly UI
 - **Technologies Used:** React, Tailwind CSS
+
+### 3. Comment Section
+- **Description:** An interactive platform for users to share opinions and discuss tech-related topics. Users can post comments, engage in discussions, and provide feedback or insights.
+- **Features:**
+  - Comment posting and discussion threads
+  - Upvote and downvote options for comments
+  - Real-time updates for discussions
+- **Technologies Used:** React, Tailwind CSS
+
+### 4. Shooting Guns
+- **Description:** This project showcases three guns demonstrating debouncing and throttling concepts in JavaScript. Each gun has unique shooting behavior based on its function logic—normal, throttled, and debounced—providing an interactive approach to understanding these key programming techniques.
+- **Features:**
+  - Interactive shooting mechanics
+  - Visual representation of debouncing and throttling
+  - Engaging user interface
+- **Technologies Used:** React, Tailwind CSS
+
+### 5. Diwali Gifts
+- **Description:** An engaging app for assigning Diwali gifts to friends and family. Users can shuffle and assign gifts uniquely, with a reset option if changes are needed. Built in React.js, the app ensures each person receives a distinct gift through an interactive interface.
+- **Features:**
+  - Unique gift assignment for each user
+  - Shuffle and reset functionality
+  - User-friendly design
+- **Technologies Used:** React, Tailwind CSS
+
+### 6. Tic Tac Toe
+- **Description:** A classic Tic Tac Toe game where players compete against each other, featuring an intuitive UI for two-player gameplay. The game checks for winning conditions and handles ties, ensuring a smooth gaming experience.
+- **Features:**
+  - Interactive game board
+  - Displays winner or draw status
+  - Easy game restart functionality
+- **Technologies Used:** React, Vite, Tailwind CSS, React Icons
 
 
 ## Contribution

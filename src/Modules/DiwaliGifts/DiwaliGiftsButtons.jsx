@@ -1,19 +1,26 @@
-import React,{useState, useEffect} from "react";
+// DiwaliGiftsButtons.js
+import React, { useState, useEffect } from "react";
 import { useAssignGift } from "./myHooks";
 
+/**
+ * DiwaliGiftsButtons component
+ * 
+ * This component contains buttons to assign gifts, shuffle gifts, 
+ * and reset the gift assignments. It manages the state to track 
+ * whether gifts have been assigned or not.
+ */
 const DiwaliGiftsButtons = ({ names, setNames }) => {
   const [assigned, setAssigned] = useState(false);
 
   const assignGifts = () => {
     const checkGift = (i) => {
-      if (i.gifts === "No Gifts Assign") {
+      if (i.gifts === "No Gifts Assigned") {
         return {
           ...i,
           gifts: useAssignGift(),
         };
-      } else {
-        return i;
       }
+      return i;
     };
 
     if (assigned) {
@@ -28,24 +35,28 @@ const DiwaliGiftsButtons = ({ names, setNames }) => {
     setNames(
       names.map((i) => ({
         ...i,
-        gifts: "No Gifts Assign",
+        gifts: "No Gifts Assigned",
       }))
     );
     setAssigned(false);
   };
 
-  const suffleGifts = () => {
+  const shuffleGifts = () => {
+    if (!assigned) {
+      alert("Please Assign Gifts first");
+      return;
+    }
     setNames(
       names.map((i) => ({
         ...i,
         gifts: useAssignGift(),
       }))
     );
-    setAssigned(true)
+    setAssigned(true);
   };
 
   useEffect(() => {
-    setAssigned(false);
+    setAssigned(false); // Reset assigned state when names change
   }, [names.length]);
 
   return (
@@ -58,9 +69,9 @@ const DiwaliGiftsButtons = ({ names, setNames }) => {
       </button>
       <button
         className="p-2 m-2 w-[300px] bg-red-400 hover:bg-red-800 hover:text-white text-black font-bold rounded-xl"
-        onClick={suffleGifts}
+        onClick={shuffleGifts}
       >
-        Suffle Gifts
+        Shuffle Gifts
       </button>
       <button
         className="p-2 m-2 w-[300px] bg-gray-400 hover:bg-white text-black font-bold rounded-xl"

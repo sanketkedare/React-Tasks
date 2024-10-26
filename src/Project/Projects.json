@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Password Generator",
+        "path": "password-generator",
+        "des": "Built with React, Vite, and Tailwind CSS, this app helps users create customized passwords based on preferred length and complexity. Users can select from a variety of combinations, including letters-only, numbers and letters, symbols and letters, or a mix of symbols, letters, and numbers, providing a secure and flexible tool for generating strong, unique passwords."
+    },
+    {
+        "name": "To-Do List",
+        "path": "todo-list",
+        "des": "A streamlined interface for managing daily tasks, allowing users to add, edit, and remove tasks as needed. Built with React, the project leverages a component-based architecture for efficient task handling, with Vite enhancing development speed and build efficiency."
+    },
+    {
+        "name": "Comment Section",
+        "path": "comment-section",
+        "des": "This interactive project provides a platform for users to share opinions and discuss tech-related topics. Users can post comments, participate in discussions, and engage with others by providing constructive feedback or additional insights."
+    },
+    {
+        "name": "Shooting Guns",
+        "path": "shooting-guns",
+        "des": "This project showcases three guns demonstrating debouncing and throttling concepts in JavaScript. Each gun has unique shooting behavior based on its respective function logic—normal, throttled, and debounced—offering an interactive and visual approach to understanding these key programming techniques."
+    },
+    {
+        "name": "Diwali Gifts",
+        "path": "diwali-gifts",
+        "des": "An engaging app for assigning Diwali gifts to friends and family. Users can shuffle and assign gifts uniquely, with a reset option if changes are needed. Built in React.js, the app ensures each person receives a distinct gift, combining thoughtful logic with an interactive interface."
+    },
+    {
+        "name": "Tic Tac Toe Game",
+        "path": "tic-tac-toe",
+        "des": "A classic Tic Tac Toe game implemented with React, featuring an intuitive UI for a two-player experience. The game checks for winning conditions and handles ties, providing a smooth and enjoyable gameplay experience."
+    }
+]

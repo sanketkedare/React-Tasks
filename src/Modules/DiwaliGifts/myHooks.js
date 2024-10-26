@@ -1,3 +1,4 @@
+// myHooks.js
 const diwaliGifts = [
     "Sweets Box",
     "Dry Fruits Hamper",
@@ -14,9 +15,16 @@ const diwaliGifts = [
     "Ethnic Jewelry",
     "Spiritual Book",
     "Personalized Photo Frame"
-];
-
-export const useAssignGift = () => {
+  ];
+  
+  /**
+   * useAssignGift custom hook
+   * 
+   * This hook randomly selects a gift from the predefined list of Diwali gifts.
+   * It is called when assigning gifts to ensure a random selection each time.
+   */
+  export const useAssignGift = () => {
     const number = Math.floor(Math.random() * diwaliGifts.length);
     return diwaliGifts[number];
-}
+  };
+  
