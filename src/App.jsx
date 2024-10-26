@@ -1,24 +1,31 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import PasswordGenrator from "./Modules/Password_Genrator/PasswordGenrator";
-import ToDo from "./Modules/To-Do_List/ToDo";
-import Comment from "./Modules/Comment/Comment";
-import Projects from "./Project/Projects";
-import ShootingGuns from "./Modules/Shooting_Guns/ShootingGuns";
-import DiwaliGifts from "./Modules/DiWaliGifts/DiwaliGifts";
-import TicTacToe from "./Modules/TicTacToe/TicTacToe";
+import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
+import PasswordGenrator from "./Modules/Password_Genrator/PasswordGenrator.jsx";
+import ToDo from "./Modules/To-Do_List/ToDo.jsx";
+import Comment from "./Modules/Comment/Comment.jsx";
+import Projects from "./Project/Projects.jsx";
+import ShootingGuns from "./Modules/Shooting_Guns/ShootingGuns.jsx";
+import DiwaliGifts from "./Modules/DiWaliGifts/DiwaliGifts.jsx";
+import TicTacToe from "./Modules/TicTacToe/TicTacToe.jsx";
 
+/**
+ * App Component
+ * 
+ * This component sets up the routing for the application using React Router.
+ * The main route ("/") renders the Projects component, which serves as a 
+ * parent for all project-related routes. Each nested route corresponds 
+ * to a specific project and is rendered within the Projects component.
+ */
 function App() {
   return (
     <BrowserRouter className="relative">
-   
       <Routes>
         <Route path="/" element={<Projects />}>
-          <Route path="/password-generator" element={<PasswordGenrator />} />
-          <Route path="/todo-list" element={<ToDo />} />
-          <Route path='/comment-section' element={<Comment/>}/>
-          <Route path="/shooting-guns" element={<ShootingGuns/>}/>
-          <Route path="/diwali-gifts" element={<DiwaliGifts/>}/>
-          <Route path="tic-tac-toe" element={<TicTacToe/>}/>
+          <Route path="password-generator" element={<PasswordGenrator />} />
+          <Route path="todo-list" element={<ToDo />} />
+          <Route path="comment-section" element={<Comment />} />
+          <Route path="shooting-guns" element={<ShootingGuns />} />
+          <Route path="diwali-gifts" element={<DiwaliGifts />} />
+          <Route path="tic-tac-toe" element={<TicTacToe />} />
         </Route>
       </Routes>
     </BrowserRouter>
