@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TicTacContext } from "./TicTacContextComponent";
 
 /**
  * Button Component
  * This component renders the start/exit button for the Tic Tac Toe game.
  */
-const Button = ({ start, setStart }) => {
+const Button = () => {
+  const { start, setStart } = useContext(TicTacContext);
+  
   return (
     <div className="lg:my-4 my-10">
       <button

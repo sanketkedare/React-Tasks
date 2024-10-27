@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import PasswordGenrator from "./Modules/Password_Genrator/PasswordGenrator.jsx";
-import ToDo from "./Modules/To-Do_List/ToDo.jsx";
-import Comment from "./Modules/Comment/Comment.jsx";
-import Projects from "./Project/Projects.jsx";
-import ShootingGuns from "./Modules/Shooting_Guns/ShootingGuns.jsx";
-import TicTacToe from "./Modules/TicTacToe/TicTacToe.jsx";
-import DiwaliGifts from "./Modules/DiwaliGifts/DiwaliGifts.jsx";
+import TicTackPage from "./Pages/TicTackPage.jsx";
+import ToDoPage from "./Pages/ToDoPage.jsx";
+import CommentSectionPage from "./Pages/CommentSectionPage.jsx";
+import ShootingGunsPage from "./Pages/ShootingGunsPage.jsx";
+import PasswordGeneratorPage from "./Pages/PasswordGeneratorPage.jsx";
+import HomePage from "./Pages/HomePage.jsx";
+import DiwaliGiftsPage from "./Pages/DiwaliGiftsPage.jsx";
 
 /**
  * App Component
@@ -15,17 +15,18 @@ import DiwaliGifts from "./Modules/DiwaliGifts/DiwaliGifts.jsx";
  * parent for all project-related routes. Each nested route corresponds 
  * to a specific project and is rendered within the Projects component.
  */
+
 function App() {
   return (
     <BrowserRouter className="relative">
       <Routes>
-        <Route path="/" element={<Projects />}>
-          <Route path="password-generator" element={<PasswordGenrator />} />
-          <Route path="todo-list" element={<ToDo />} />
-          <Route path="comment-section" element={<Comment />} />
-          <Route path="shooting-guns" element={<ShootingGuns />} />
-          <Route path="diwali-gifts" element={<DiwaliGifts />} />
-          <Route path="tic-tac-toe" element={<TicTacToe />} />
+        <Route path="/" element={<HomePage/>}>
+          <Route path="password-generator" element={<PasswordGeneratorPage/>} />
+          <Route path="todo-list" element={<ToDoPage />} />
+          <Route path="comment-section" element={<CommentSectionPage />} />
+          <Route path="shooting-guns" element={<ShootingGunsPage />} />
+          <Route path="diwali-gifts" element={<DiwaliGiftsPage />} />
+          <Route path="tic-tac-toe" element={<TicTackPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

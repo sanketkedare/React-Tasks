@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { MdRestartAlt } from "react-icons/md";
+import { TicTacContext } from "./TicTacContextComponent";
 
 /**
  * HeadingComponent
  * This component displays the current player's turn and a restart button.
  */
-const HeadingComponent = ({ turn, restartGame }) => {
+const HeadingComponent = () => {
+  const { turn, restartGame } = useContext(TicTacContext);
+  
   return (
     <div>
       <h1 className="text-center font-bold lg:text-2xl my-5">

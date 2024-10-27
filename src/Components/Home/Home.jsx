@@ -1,8 +1,8 @@
 /**
- * Projects Component:
+ * Home Component:
  * 
  * Purpose:
- * - Main component for displaying the Projects page.
+ * - Main component for displaying the Home page.
  * - Conditionally renders either the project list with introduction or individual project details based on the current route.
  * 
  * Key Sections:
@@ -33,7 +33,7 @@ import Introduction from "./Introduction";
 import { headerMotion, iconMotion } from "./utils";
 import TaskIntroText from "./TaskIntroText";
 
-const Projects = () => {
+const Home = () => {
   const { pathname } = useLocation();
 
   return (
@@ -92,4 +92,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Home;

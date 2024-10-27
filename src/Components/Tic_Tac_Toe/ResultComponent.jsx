@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BsTrophy } from "react-icons/bs";
+import { TicTacContext } from "./TicTacContextComponent";
 
 /**
  * ResultComponent
  * This component displays the result of the game and allows the user to reset the game.
  */
-const ResultComponent = ({ setEndGame, endGame }) => {
+const ResultComponent = () => {
+  const { setEndGame, endGame } = useContext(TicTacContext);
   return (
     <div
       className="w-[90%] h-[90vh] left-10 bg-gray-800 rounded-xl absolute flex justify-center items-center"
