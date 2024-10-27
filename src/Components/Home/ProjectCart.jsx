@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 
 const ProjectCart = ({ item }) => {
   return (
-    <div className="relative w-[300px] h-[550px] my-4 m-auto bg-yellow-200 rounded-xl bg-opacity-20">
+    <div className="relative w-[300px] h-[550px] my-4 m-auto bg-yellow-200 rounded-xl bg-opacity-20 hover:bg-opacity-25">
       {/* Project Title and Description */}
       <div className="p-4">
         <h1 className="font-bold text-3xl py-4">{item.name}</h1>
@@ -29,7 +29,7 @@ const ProjectCart = ({ item }) => {
       
       {/* Navigation Button */}
       <Link to={`/${item.path}`}>
-        <button className="absolute bottom-4 left-4 p-4 w-[90%] bg-yellow-400 text-black font-bold rounded-xl hover:bg-sky-500">
+        <button className="absolute bottom-4 left-4 p-4 w-[90%] bg-yellow-400  text-black font-bold rounded-xl hover:bg-sky-500">
           Go to Project
         </button>
       </Link>

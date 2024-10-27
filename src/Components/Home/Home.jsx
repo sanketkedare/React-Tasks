@@ -37,22 +37,22 @@ const Home = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="lg:mx-10 mx-5 relative">
+    <div className="relative">
       {/* Renders Project List Page or Detailed Project View based on pathname */}
       {pathname === "/" ? (
         <>
           {/* Header Section */}
           <motion.div
-            className="flex z-10 gap-2 justify-center items-center sticky top-0 bg-[#010113] w-full h-[100px]"
+            className="flex z-20 gap-4 justify-center items-center w-screen fixed top-0 bg-[#010113] h-[100px] rounded-b-xl"
             {...headerMotion}
           >
             <img src="/react.svg" alt="React Logo" />
-            <img src="/vite.svg" alt="Vite Logo" />
             <h1 className="lg:text-4xl text-xl font-bold">React Tasks</h1>
+            <img src="/vite.svg" alt="Vite Logo" />
           </motion.div>
 
           {/* Rotating Icon */}
-          <motion.div className="absolute p-2 lg:w-[250px] lg:h-[60vh] h-[10vh] lg:top-24 lg:right-28 right-5 shadow-sm rounded-full flex justify-center items-center">
+          <motion.div className="lg:opacity-100 opacity-10 absolute p-2 lg:w-[250px]  w-[95%] lg:h-[60vh] h-screen lg:top-24  lg:right-28 shadow-sm rounded-full flex justify-center items-center">
             <motion.img
               id="react-icon"
               src="/react.svg"
@@ -65,7 +65,7 @@ const Home = () => {
           <TaskIntroText />
 
           {/* Project List Section */}
-          <h2 className="text-3xl text-center my-10 font-bold border-t-2 pt-10">Tasks</h2>
+          <h2 className="text-3xl text-center py-10 font-bold border-t-2 pt-10 hover:text-yellow-400 ">Tasks</h2>
           <div className="p-4 grid lg:grid-cols-4">
             {ProjectList.map((item, index) => (
               <motion.div
@@ -80,13 +80,13 @@ const Home = () => {
           </div>
         </>
       ) : (
-        <>
+        <div lg:mx-10 mx-4 >
           {/* Home Button and Outlet for Nested Routes */}
           <Link to="/">
             <BiHome className="fixed top-10 left-10 text-[50px] p-2 bg-yellow-400 hover:bg-sky-500 rounded-xl text-black" />
           </Link>
           <Outlet />
-        </>
+        </div>
       )}
     </div>
   );
