@@ -20,7 +20,7 @@ const Introduction = () => {
           <span className="text-red-500 font-semibold not-italic"> One stop </span>
           solution for the Beginers !!
         </h1>
-        <div className="flex lg:gap-10 gap-3  mt-10">
+        <div className="flex lg:gap-10 gap-3 z-20  mt-10 ">
           <Link
             to="https://github.com/sanketkedare/React-Tasks"
             target="_blank"

@@ -43,7 +43,7 @@ const Home = () => {
         <>
           {/* Header Section */}
           <motion.div
-            className="flex z-20 gap-4 justify-center items-center w-screen fixed top-0 bg-[#010113] h-[100px] rounded-b-xl"
+            className="flex z-30 gap-4 justify-center items-center w-screen fixed top-0 bg-[#010113] h-[100px] rounded-b-xl"
             {...headerMotion}
           >
             <img src="/react.svg" alt="React Logo" />
@@ -52,11 +52,11 @@ const Home = () => {
           </motion.div>
 
           {/* Rotating Icon */}
-          <motion.div className="lg:opacity-100 opacity-10 absolute p-2 lg:w-[250px]  w-[95%] lg:h-[60vh] h-screen lg:top-24  lg:right-28 shadow-sm rounded-full flex justify-center items-center">
+          <motion.div className="lg:opacity-60 z-10  opacity-10 absolute lg:w-[250px] m-auto  w-full lg:h-[60vh] lg:top-24 top-40 lg:right-28 shadow-sm rounded-full flex justify-center items-center">
             <motion.img
               id="react-icon"
               src="/react.svg"
-              className="h-full"
+              className="lg:h-full h-[60vw]"
               {...iconMotion}
             />
           </motion.div>
