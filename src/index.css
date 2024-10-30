@@ -9,6 +9,8 @@
 body{
     background-color: #010113;
     color: antiquewhite;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;    /* Firefox */
 }
 
 /* In your global CSS file (e.g., index.css) */
@@ -20,3 +22,8 @@ html {
   html::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
   }
+
+  /* Hide scrollbar globally */
+::-webkit-scrollbar {
+  display: none;
+}

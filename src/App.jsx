@@ -6,6 +6,7 @@ import ShootingGunsPage from "./Pages/ShootingGunsPage.jsx";
 import PasswordGeneratorPage from "./Pages/PasswordGeneratorPage.jsx";
 import HomePage from "./Pages/HomePage.jsx";
 import DiwaliGiftsPage from "./Pages/DiwaliGiftsPage.jsx";
+import FetchPostsPage from "./Pages/FetchPostsPage.jsx";
 
 /**
  * App Component
@@ -27,6 +28,7 @@ function App() {
           <Route path="shooting-guns" element={<ShootingGunsPage />} />
           <Route path="diwali-gifts" element={<DiwaliGiftsPage />} />
           <Route path="tic-tac-toe" element={<TicTackPage />} />
+          <Route path="fetch-posts" element={<FetchPostsPage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

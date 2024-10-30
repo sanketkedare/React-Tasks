@@ -32,6 +32,7 @@ import { motion } from "framer-motion";
 import Introduction from "./Introduction";
 import { headerMotion, iconMotion } from "./utils";
 import TaskIntroText from "./TaskIntroText";
+import Footer from "./Footer";
 
 const Home = () => {
   const { pathname } = useLocation();
@@ -65,8 +66,8 @@ const Home = () => {
           <TaskIntroText />
 
           {/* Project List Section */}
-          <h2 className="text-3xl text-center py-10 font-bold border-t-2 pt-10 hover:text-yellow-400 ">Tasks</h2>
-          <div className="p-4 grid lg:grid-cols-4">
+          <h2 className="lg:text-3xl text-xl text-center py-10 font-bold border-t-2 pt-10 hover:text-yellow-400 ">Tasks</h2>
+          <div className="p-4 grid lg:grid-cols-4 grid-cols-2 gap-2">
             {ProjectList.map((item, index) => (
               <motion.div
                 key={item.path}
@@ -78,6 +79,7 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
+          <Footer/>
         </>
       ) : (
         <div lg:mx-10 mx-4 >

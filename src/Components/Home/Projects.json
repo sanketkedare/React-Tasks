@@ -2,31 +2,36 @@
     {
         "name": "Password Generator",
         "path": "password-generator",
-        "des": "Built with React, Vite, and Tailwind CSS, this app helps users create customized passwords based on preferred length and complexity. Users can select from a variety of combinations, including letters-only, numbers and letters, symbols and letters, or a mix of symbols, letters, and numbers, providing a secure and flexible tool for generating strong, unique passwords."
+        "des": "Developed with React, Vite, and Tailwind CSS, this tool creates tailored passwords of varied lengths and complexities. Users can select letters-only, letters with numbers, letters with symbols, or a mix of all, ensuring strong, unique passwords for added security."
     },
     {
         "name": "To-Do List",
         "path": "todo-list",
-        "des": "A streamlined interface for managing daily tasks, allowing users to add, edit, and remove tasks as needed. Built with React, the project leverages a component-based architecture for efficient task handling, with Vite enhancing development speed and build efficiency."
+        "des": "A clean, efficient app for daily task management, built with React and Vite for optimized performance. It enables users to add, edit, or delete tasks, using a component-based design for seamless organization and workflow."
     },
     {
         "name": "Comment Section",
         "path": "comment-section",
-        "des": "This interactive project provides a platform for users to share opinions and discuss tech-related topics. Users can post comments, participate in discussions, and engage with others by providing constructive feedback or additional insights."
+        "des": "An interactive space for users to exchange opinions and discuss topics. This app enables posting comments, replying to others, and engaging in constructive dialogue on shared interests or tech insights."
     },
     {
         "name": "Shooting Guns",
         "path": "shooting-guns",
-        "des": "This project showcases three guns demonstrating debouncing and throttling concepts in JavaScript. Each gun has unique shooting behavior based on its respective function logic—normal, throttled, and debounced—offering an interactive and visual approach to understanding these key programming techniques."
+        "des": "This project illustrates debouncing and throttling concepts through three unique gun models, each with its own firing mechanism. It visually demonstrates these essential programming techniques with engaging functionality."
     },
     {
         "name": "Diwali Gifts",
         "path": "diwali-gifts",
-        "des": "An engaging app for assigning Diwali gifts to friends and family. Users can shuffle and assign gifts uniquely, with a reset option if changes are needed. Built in React.js, the app ensures each person receives a distinct gift, combining thoughtful logic with an interactive interface."
+        "des": "An app for assigning Diwali gifts to friends and family, ensuring each gift is unique. It includes options to shuffle, assign, or reset as desired, designed with React for smooth, interactive experiences that bring festive joy."
     },
     {
         "name": "Tic Tac Toe Game",
         "path": "tic-tac-toe",
-        "des": "A classic Tic Tac Toe game implemented with React, featuring an intuitive UI for a two-player experience. The game checks for winning conditions and handles ties, providing a smooth and enjoyable gameplay experience."
+        "des": "This React-based Tic Tac Toe game features a user-friendly interface for two players. It handles win or tie scenarios smoothly, delivering a fun and classic gaming experience in a digital format."
+    },
+    {
+        "name": "Fetch Posts",
+        "path": "fetch-posts",
+        "des": "In this task, you'll learn how to fetch data and store it in component state variables. You’ll also develop skills in logical rendering, such as conditional rendering, and gain an understanding of how asynchronous code functions."
     }
 ]

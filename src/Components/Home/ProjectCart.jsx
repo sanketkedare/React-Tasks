@@ -20,16 +20,16 @@ import { Link } from "react-router-dom";
 
 const ProjectCart = ({ item }) => {
   return (
-    <div className="relative w-[300px] h-[550px] my-4 m-auto bg-yellow-200 rounded-xl bg-opacity-20 hover:bg-opacity-25">
+    <div className="relative lg:w-[300px] lg:h-[550px] h-[55vh] my-4 m-auto bg-yellow-200 rounded-xl bg-opacity-20 hover:bg-opacity-25">
       {/* Project Title and Description */}
       <div className="p-4">
-        <h1 className="font-bold text-3xl py-4">{item.name}</h1>
-        <p className="w-[90%]">{item.des}</p>
+        <h1 className="font-bold lg:text-[27px] text-[13px] border-b lg:py-4 py-2 ">{item.name}</h1>
+        <p className=" mt-5 lg:text-lg text-[12px]">{item.des}</p>
       </div>
       
       {/* Navigation Button */}
       <Link to={`/${item.path}`}>
-        <button className="absolute bottom-4 left-4 p-4 w-[90%] bg-yellow-400  text-black font-bold rounded-xl hover:bg-sky-500">
+        <button className="absolute lg:text-xl text-[12px] bottom-4 lg:left-4 left-2 lg:p-4 p-2 w-[90%] bg-yellow-400  text-black font-bold rounded-xl hover:bg-sky-500">
           Go to Project
         </button>
       </Link>
