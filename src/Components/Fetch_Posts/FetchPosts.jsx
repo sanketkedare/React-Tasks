@@ -42,7 +42,6 @@ const FetchPosts = () => {
     }
   }, [openPost]);
 
-
   return (
     <div className="lg:mt-10 mt-16 w-[80%] m-auto text-center">
       <h1 className="text-center lg:text-3xl  font-bold">Fetch Posts</h1>
@@ -73,36 +72,42 @@ const FetchPosts = () => {
         </div>
       )}
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 h-[80vh] overflow-y-auto">
-        {openPost > 0 && (
-          <div className="col-span-1 border lg:h-[60vh] h-[40vh] lg:w-[90%] w-full lg:mt-10 p-3 rounded-xl bg-white text-gray-700 overflow-hidden">
-            {current && (
-              <div>
-                <h1 className="lg:text-2xl uppercase font-bold">{current.id} ] {current.title}</h1>
-                <p className="lg:mt-10 mt-5 lg:text-xl text-justify px-3">{current.body}</p>
-              </div>
-            )}
-          </div>
-        )}
+      {showData && (
+        <div className="grid lg:grid-cols-3 grid-cols-1 h-[80vh] overflow-y-auto">
+          {openPost > 0 && (
+            <div className="col-span-1 border lg:h-[60vh] h-[40vh] lg:w-[90%] w-full lg:mt-10 p-3 rounded-xl bg-white text-gray-700 overflow-hidden">
+              {current && (
+                <div>
+                  <h1 className="lg:text-2xl uppercase font-bold">
+                    {current.id} ] {current.title}
+                  </h1>
+                  <p className="lg:mt-10 mt-5 lg:text-xl text-justify px-3">
+                    {current.body}
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
 
-        <div
-          className={`flex flex-wrap justify-evenly ${
-            openPost > 0 ? "col-span-2" : "col-span-3"
-          } h-[80vh] mt-2  overflow-y-auto`}
-        >
-          {showData &&
-            (data.length <= 0
-              ? "Please Wait..."
-              : data.map((item) => (
-                  <SinglePost
-                    item={item}
-                    key={item.id}
-                    handlerOpenPost={handlerOpenPost}
-                    openPost={openPost}
-                  />
-                )))}
+          <div
+            className={`flex flex-wrap justify-evenly ${
+              openPost > 0 ? "col-span-2" : "col-span-3"
+            } h-[80vh] mt-2  overflow-y-auto`}
+          >
+            {showData &&
+              (data.length <= 0
+                ? "Please Wait..."
+                : data.map((item) => (
+                    <SinglePost
+                      item={item}
+                      key={item.id}
+                      handlerOpenPost={handlerOpenPost}
+                      openPost={openPost}
+                    />
+                  )))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
