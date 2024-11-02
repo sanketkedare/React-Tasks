@@ -1,8 +1,8 @@
 import React from "react";
 import Home from "../Components/Home/Home";
 
-const HomePage = () => {
+const WelComePage = () => {
   return <Home />;
 };
 
-export default HomePage;
+export default WelComePage;

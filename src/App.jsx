@@ -4,10 +4,10 @@ import ToDoPage from "./Pages/ToDoPage.jsx";
 import CommentSectionPage from "./Pages/CommentSectionPage.jsx";
 import ShootingGunsPage from "./Pages/ShootingGunsPage.jsx";
 import PasswordGeneratorPage from "./Pages/PasswordGeneratorPage.jsx";
-import HomePage from "./Pages/HomePage.jsx";
 import DiwaliGiftsPage from "./Pages/DiwaliGiftsPage.jsx";
 import FetchPostsPage from "./Pages/FetchPostsPage.jsx";
 import DiwaliLights from "./Components/Diwali_Lights/DiwaliLights.jsx";
+import WelComePage from "./Pages/WelComePage.jsx";
 
 /**
  * App Component
@@ -22,7 +22,7 @@ function App() {
   return (
     <BrowserRouter className="relative">
       <Routes>
-        <Route path="/" element={<HomePage />}>
+        <Route path="/" element={<WelComePage />}>
           <Route path="password-generator" element={<PasswordGeneratorPage />}/>
           <Route path="todo-list" element={<ToDoPage />} />
           <Route path="comment-section" element={<CommentSectionPage />} />
