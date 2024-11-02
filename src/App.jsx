@@ -23,10 +23,7 @@ function App() {
     <BrowserRouter className="relative">
       <Routes>
         <Route path="/" element={<HomePage />}>
-          <Route
-            path="password-generator"
-            element={<PasswordGeneratorPage />}
-          />
+          <Route path="password-generator" element={<PasswordGeneratorPage />}/>
           <Route path="todo-list" element={<ToDoPage />} />
           <Route path="comment-section" element={<CommentSectionPage />} />
           <Route path="shooting-guns" element={<ShootingGunsPage />} />
