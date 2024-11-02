@@ -15,12 +15,17 @@
  * - Basic layout with background color, rounded corners, and button hover effects.
  */
 
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { TheamContext } from "../../Utils/TheamContextComponent";
 
-const ProjectCart = ({ item }) => {
+const ProjectCart = ({ item }) => 
+{
+  const {theme} = useContext(TheamContext);
+
   return (
-    <div className="relative lg:w-[300px] lg:h-[550px] h-[55vh] my-4 m-auto bg-yellow-200 rounded-xl bg-opacity-20 hover:bg-opacity-25">
+    <div  style={{ borderColor:theme.text}}
+       className="relative lg:w-[300px] lg:h-[550px] h-[55vh] my-4 m-auto bg-yellow-200 rounded-xl bg-opacity-20 hover:bg-opacity-25 border">
       {/* Project Title and Description */}
       <div className="p-4">
         <h1 className="font-bold lg:text-[27px] text-[13px] border-b lg:py-4 py-2 ">{item.name}</h1>

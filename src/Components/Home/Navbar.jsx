@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { headerMotion, iconMotion } from "./utils";
+import { TheamContext } from "../../Utils/TheamContextComponent";
 
 //  Navbar
 
-const Navbar = () => {
+const Navbar = () => 
+{
+  const { theme } = useContext(TheamContext);
+
   return (
     <>
       {/* Header Section */}
       <motion.div
-        className="flex z-30 gap-4 justify-center items-center w-screen fixed top-0 bg-[#010113] lg:h-[100px] h-[70px] lg:rounded-b-xl rounded-b-full"
+      style={{background: theme.background , color: theme.text}}
+        className="flex z-30 gap-4 justify-center items-center w-screen sticky top-0 lg:h-[100px] h-[70px] lg:rounded-b-xl rounded-b-full"
         {...headerMotion}
       >
         <img src="/react.svg" alt="React Logo" />
