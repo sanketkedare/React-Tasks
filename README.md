@@ -16,6 +16,7 @@ This repository uses the following technologies and tools:
 - **React-Router-DOM:** Library for managing routes and navigation within React applications.
 - **React-Icons:** Popular collection of SVG icons for easy integration into React projects.
 
+
 ## Folder Structure
 
 Here's a look at the general folder structure of the project. This organization promotes modularity and reusability:
@@ -23,20 +24,25 @@ Here's a look at the general folder structure of the project. This organization 
 ```
 project-root
 ├── src
-│   ├── assets                  # Image and other media files
-│   ├── Modules                 # Contains all the project modules
-│   │   ├── Password_Generator  # Password generator project files
-│   │   ├── To-Do_List          # To-do list project files
-│   │   ├── TicTacToe           # Tic Tac Toe project files
-│   │   ├── Projects.json       # JSON file containing project data
-│   │   ├── ProjectCart.jsx     # Project list card component
-│   │   └── Project.jsx         # Main project component
-│   ├── App.js                  # Main app component
-│   ├── index.css               # Global styles
-│   └── main.js                 # Entry point for the application
-├── package.json                # Project dependencies and scripts
-├── tailwind.config.js          # Tailwind CSS configuration
-└── README.md                   # Project documentation
+│   ├── assets                    # Image and other media files
+│   ├── Components                # Contains all tasks inside 
+│   │   ├── Password_Generator    # Password generator task files
+│   │   ├── To-Do_List            # To-do list task files
+│   │   ├── TicTacToe             # Tic Tac Toe task files
+│   │   ├── Comment_Section       # Comment section task files
+│   │   ├── Shooting_Guns         # Shooting guns task files
+│   │   ├── Diwali_Gifts          # Diwali gifts task files
+│   │   ├── Fetch_Posts           # Fetch posts task files
+│   │   ├── Diwali_Lights         # Diwali lights task files
+│   │   └── Home                  # Contains main components for 
+│   ├── Pages                     # Contains Welcome Page and all 
+│   ├── Utils                     # Contains Theme functionality, 
+│   ├── App.js                    # Main app component
+│   ├── index.css                 # Global styles
+│   └── main.js                   # Entry point for the application
+├── package.json                  # Project dependencies and scripts
+├── tailwind.config.js            # Tailwind CSS configuration
+└── README.md                     # Project documentation
 ```
 
 ## Installation and Setup
@@ -69,57 +75,84 @@ To set up the projects locally and start exploring, follow these steps:
    npm run build
    ```
 
+
+
 ## Project Showcase
 
-Here are some of the projects currently available in this repository:
+Each project in this repository showcases different aspects of React development. Explore the descriptions, features, and live demo links below:
 
 ### 1. Password Generator
-- **Description:** Built with React, Vite, and Tailwind CSS, this tool helps users create secure passwords based on preferred length and complexity. Users can customize combinations, including letters-only, numbers and letters, symbols and letters, or a mix, providing a flexible solution for generating strong, unique passwords.
+- **Path:** `password-generator`
+- **Description:** Developed with React, Vite, and Tailwind CSS, this tool creates tailored passwords of varied lengths and complexities. Users can select letters-only, letters with numbers, letters with symbols, or a mix of all, ensuring strong, unique passwords for added security.
+- **[Live Demo](https://react-tasks-keh6.onrender.com/password-generator)**
 - **Features:**
-  - Dynamic length selector
-  - Toggle options for letters, numbers, and symbols
-  - Copy generated password to clipboard
-- **Technologies Used:** React, Vite, Tailwind CSS
+  - Dynamic length selection
+  - Options for letters, numbers, and symbols
+  - Copy to clipboard functionality
 
 ### 2. To-Do List
-- **Description:** A streamlined interface for managing daily tasks, allowing users to add, edit, and remove tasks as needed. Built with React, the project utilizes a component-based architecture for efficient task management, with Vite enhancing development speed.
+- **Path:** `todo-list`
+- **Description:** A clean, efficient app for daily task management, built with React and Vite for optimized performance. It enables users to add, edit, or delete tasks, using a component-based design for seamless organization and workflow.
+- **[Live Demo](https://react-tasks-keh6.onrender.com/todo-list)**
 - **Features:**
-  - Add, delete, and toggle completion on tasks
-  - Clear completed tasks button
-  - Responsive and user-friendly UI
-- **Technologies Used:** React, Tailwind CSS
+  - Add, edit, and delete tasks
+  - Component-based structure
+  - User-friendly interface
 
 ### 3. Comment Section
-- **Description:** An interactive platform for users to share opinions and discuss tech-related topics. Users can post comments, engage in discussions, and provide feedback or insights.
+- **Path:** `comment-section`
+- **Description:** An interactive space for users to exchange opinions and discuss topics. This app enables posting comments, replying to others, and engaging in constructive dialogue on shared interests or tech insights.
+- **[Live Demo](https://react-tasks-keh6.onrender.com/comment-section)**
 - **Features:**
-  - Comment posting and discussion threads
-  - Upvote and downvote options for comments
-  - Real-time updates for discussions
-- **Technologies Used:** React, Tailwind CSS
+  - Post comments and replies
+  - Engage in threaded discussions
+  - Upvote and downvote options
 
 ### 4. Shooting Guns
-- **Description:** This project showcases three guns demonstrating debouncing and throttling concepts in JavaScript. Each gun has unique shooting behavior based on its function logic—normal, throttled, and debounced—providing an interactive approach to understanding these key programming techniques.
+- **Path:** `shooting-guns`
+- **Description:** This project illustrates debouncing and throttling concepts through three unique gun models, each with its own firing mechanism. It visually demonstrates these essential programming techniques with engaging functionality.
+- **[Live Demo](https://react-tasks-keh6.onrender.com/shooting-guns)**
 - **Features:**
-  - Interactive shooting mechanics
-  - Visual representation of debouncing and throttling
-  - Engaging user interface
-- **Technologies Used:** React, Tailwind CSS
+  - Interactive gun firing mechanics
+  - Visual demonstration of debouncing and throttling
+  - Engaging animations
 
 ### 5. Diwali Gifts
-- **Description:** An engaging app for assigning Diwali gifts to friends and family. Users can shuffle and assign gifts uniquely, with a reset option if changes are needed. Built in React.js, the app ensures each person receives a distinct gift through an interactive interface.
+- **Path:** `diwali-gifts`
+- **Description:** An app for assigning Diwali gifts to friends and family, ensuring each gift is unique. It includes options to shuffle, assign, or reset as desired, designed with React for smooth, interactive experiences that bring festive joy.
+- **[Live Demo](https://react-tasks-keh6.onrender.com/diwali-gifts)**
 - **Features:**
-  - Unique gift assignment for each user
-  - Shuffle and reset functionality
-  - User-friendly design
-- **Technologies Used:** React, Tailwind CSS
+  - Unique gift assignment per user
+  - Shuffle and reset functionalities
+  - Festive-themed interface
 
-### 6. Tic Tac Toe
-- **Description:** A classic Tic Tac Toe game where players compete against each other, featuring an intuitive UI for two-player gameplay. The game checks for winning conditions and handles ties, ensuring a smooth gaming experience.
+### 6. Tic Tac Toe Game
+- **Path:** `tic-tac-toe`
+- **Description:** This React-based Tic Tac Toe game features a user-friendly interface for two players. It handles win or tie scenarios smoothly, delivering a fun and classic gaming experience in a digital format.
+- **[Live Demo](https://react-tasks-keh6.onrender.com/tic-tac-toe)**
 - **Features:**
-  - Interactive game board
-  - Displays winner or draw status
-  - Easy game restart functionality
-- **Technologies Used:** React, Vite, Tailwind CSS, React Icons
+  - Two-player interactive game board
+  - Win and draw condition handling
+  - Game reset option
+
+### 7. Fetch Posts
+- **Path:** `fetch-posts`
+- **Description:** This project teaches data fetching and storage in component state variables, with a focus on logical rendering, such as conditional rendering, and a better understanding of asynchronous code in React.
+- **[Live Demo](https://react-tasks-keh6.onrender.com/fetch-posts)**
+- **Features:**
+  - Fetch and display data
+  - Conditional rendering
+  - Handling asynchronous functions
+
+### 8. Diwali Lights
+- **Path:** `diwali-lights`
+- **Description:** Explore conditional rendering in depth, featuring options for Static, Blinking, and Fading Lights based on user selection. The project utilizes `setInterval` to create dynamic lighting effects and includes controls to manage the display easily.
+- **[Live Demo](https://react-tasks-keh6.onrender.com/diwali-lights)**
+- **Features:**
+  - Choose between Static, Blinking, or Fading Lights
+  - Adjustable duration and control buttons
+  - Dynamic lighting using `setInterval`
+
 
 
 ## Contribution
