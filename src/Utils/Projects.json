@@ -37,6 +37,6 @@
     {
         "name": "Diwali Lights",
         "path": "diwali-lights",
-        "des": "In this project, you'll explore conditional rendering in depth, featuring options for Static, Blinking, and Fading Lights based on user selection. The user interface allows you to set the duration, and control buttons facilitate easy management of the light display. Additionally, the project effectively utilizes setInterval for dynamic lighting effects."
+        "des": "Explore conditional rendering in depth, featuring options for Static, Blinking, and Fading Lights based on user selection. The user interface allows you to set the duration, and control buttons facilitate easy management of the light display. Additionally, the project effectively utilizes setInterval for dynamic lighting effects."
     }
 ]

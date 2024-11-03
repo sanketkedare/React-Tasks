@@ -1,7 +1,13 @@
 export const headerMotion = {
-    initial: { opacity: 0.5, x: -200 },
-    animate: { opacity: 1, x: 0 },
+    initial: { opacity: 0.5, y: -200 },
+    animate: { opacity: 1, y: 0 },
     transition: { duration: 1, delay: 0 },
+  };
+
+  export const themeMotion = {
+    initial: { opacity: 0.5, y: -200 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 1, delay: 0.5 },
   };
 
 export const iconMotion = {
@@ -10,7 +16,7 @@ export const iconMotion = {
   };
 
   export const introMotion = {
-    initial: { opacity: 0.5, x: 0 },
-    animate: { opacity: 1, x: 0 },
-    transition: { duration: 1.5, delay: 0 },
+    initial: { opacity: 0, y: -500 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.5, delay: 1 },
   };

@@ -13,8 +13,8 @@ const Navbar = () =>
     <>
       {/* Header Section */}
       <motion.div
-      style={{background: theme.background , color: theme.text}}
-        className="flex z-30 gap-4 justify-center items-center w-screen sticky top-0 lg:h-[100px] h-[70px] lg:rounded-b-xl rounded-b-full"
+      style={{background: theme.background , color: theme.text, borderColor:theme.text}}
+        className=" border-b flex z-30 gap-4 justify-center items-center w-screen sticky top-0 lg:h-[100px] h-[70px]  rounded-b-3xl"
         {...headerMotion}
       >
         <img src="/react.svg" alt="React Logo" />
@@ -23,7 +23,7 @@ const Navbar = () =>
       </motion.div>
 
       {/* Rotating Icon */}
-      <motion.div className="lg:opacity-60 z-10  opacity-10 absolute lg:w-[250px] m-auto  w-full lg:h-[60vh] lg:top-24 top-40 lg:right-28 shadow-sm rounded-full flex justify-center items-center">
+      <motion.div className="lg:opacity-60 z-10  opacity-15 absolute lg:w-[250px] m-auto  w-full lg:h-[60vh] lg:top-24 top-40 lg:right-28 shadow-sm rounded-full flex justify-center items-center">
         <motion.img
           id="react-icon"
           src="/react.svg"
