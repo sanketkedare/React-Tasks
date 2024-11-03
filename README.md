@@ -157,15 +157,46 @@ Each project in this repository showcases different aspects of React development
 
 ## Contribution
 
-Contributions are encouraged! If you’d like to add a feature, improve an existing one, or even add a new project, follow these steps to contribute:
+Contributions are encouraged! If you’d like to add a feature, improve an existing one, or introduce a new project, please follow these steps to contribute:
 
-1. **Fork the Repository** - Click the “Fork” button to make a copy on your GitHub account.
-2. **Clone the Fork** - Clone your copy locally using `git clone https://github.com/sanketkedare/simple-react-projects.git`.
-3. **Create a Branch** - Use `git checkout -b feature/your-feature-name` for new features.
-4. **Make Your Changes** - Implement your changes, adhering to the project’s coding style.
-5. **Test Your Changes** - Make sure your code works as expected and doesn’t break existing functionality.
-6. **Commit and Push** - Use descriptive commit messages. Push your branch to GitHub with `git push origin feature/your-feature-name`.
-7. **Create a Pull Request** - Open a pull request from your branch on GitHub to the main branch of this repository.
+1. **Fork the Repository**  
+   Click the “Fork” button on the top right to create a copy of the repository in your GitHub account.
+
+2. **Clone the Fork**  
+   Clone your forked repository to your local machine using the following command:  
+   ```bash
+   git clone https://github.com/sanketkedare/simple-react-projects.git
+   ```
+
+3. **Create a Branch**  
+   Navigate to your cloned repository and create a new branch for your feature:  
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+4. **Make Your Changes**  
+   Implement your changes while adhering to the project's coding style:
+   - Add a new JSON object in `src/Utils/Projects.json`.
+   - Create a new page file named `yourTask.jsx` in `src/Pages`.
+   - Create a separate folder for all your JSX files in `src/Components`.
+   - Place all your JSX files in this new folder.
+   - Update the routing in `App.jsx` with a path to your new component. For example:
+     ```jsx
+     <Route path={"your-path"} element={<YourComponent />} />
+     ```
+
+5. **Test Your Changes**  
+   Ensure that your code functions as expected and does not break any existing functionality.
+
+6. **Commit and Push**  
+   Use descriptive commit messages to document your changes. Push your branch to GitHub:  
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+7. **Create a Pull Request**  
+   Open a pull request from your branch on GitHub to the main branch of this repository.
+
 
 ### Contribution Ideas
 
