@@ -8,7 +8,7 @@ const ProjectPage = () => {
       <div lg:mx-10 mx-4>
         {/* Home Button and Outlet for Nested Routes */}
         <Link to="/">
-          <BiHome className="fixed top-10 left-10 text-[50px] p-2 bg-yellow-400 hover:bg-sky-500 rounded-xl text-black" />
+          <BiHome className="fixed lg:top-10 top-6 lg:left-10 left-6 lg:text-[50px] text-[30px] lg:p-2 p-1 bg-yellow-400 hover:bg-sky-500 rounded-xl text-black" />
         </Link>
         <Outlet />
       </div>

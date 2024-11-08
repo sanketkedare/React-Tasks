@@ -8,6 +8,7 @@ import DiwaliGiftsPage from "./Pages/DiwaliGiftsPage.jsx";
 import FetchPostsPage from "./Pages/FetchPostsPage.jsx";
 import DiwaliLights from "./Components/Diwali_Lights/DiwaliLights.jsx";
 import WelComePage from "./Pages/WelComePage.jsx";
+import UserProfile from "./Components/User_Profile/UserProfile.jsx";
 
 /**
  * App Component
@@ -31,6 +32,7 @@ function App() {
           <Route path="tic-tac-toe" element={<TicTackPage />} />
           <Route path="fetch-posts" element={<FetchPostsPage />} />
           <Route path="diwali-lights" element={<DiwaliLights />} />
+          <Route path="user-profile" element={<UserProfile/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
