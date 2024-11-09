@@ -43,5 +43,15 @@
         "name": "User Profile",
         "path": "user-profile",
         "des": "Created a simple User Profile Dashboard where you can display a user's information (e.g., name, email, profile picture), and have a feature to edit the user's details (name and email)."
+    },
+    {
+        "name": "Image Slider",
+        "path": "image-slider",
+        "des": ""
+    },
+    {
+        "name": "Calculator",
+        "path": "calculator",
+        "des": ""
     }
 ]

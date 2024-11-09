@@ -14,11 +14,11 @@ const Navbar = () =>
       {/* Header Section */}
       <motion.div
       style={{background: theme.background , color: theme.text, borderColor:theme.text}}
-        className=" border-b flex z-30 gap-4 justify-center items-center w-screen sticky top-0 lg:h-[100px] h-[70px]  rounded-b-3xl"
+        className=" lg:border-none border-b flex z-30 gap-4 justify-center items-center w-screen sticky top-0 lg:h-[70px] h-[70px]  rounded-b-3xl"
         {...headerMotion}
       >
         <img src="/react.svg" alt="React Logo" />
-        <h1 className="lg:text-4xl text-xl font-bold">React Tasks</h1>
+        <h1 className="lg:text-2xl text-xl font-bold">React Tasks</h1>
         <img src="/vite.svg" alt="Vite Logo" />
       </motion.div>
 

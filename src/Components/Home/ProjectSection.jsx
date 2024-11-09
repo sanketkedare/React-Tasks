@@ -13,7 +13,7 @@ const ProjectSection = () =>
     <div className="relative border-b-2 rounded-b-xl" style={{background: theme.background, borderColor:theme.text}}>
       {/* Project List Section */}
       <h2 style={{background: theme.background, borderColor:theme.text}}
-          className={`sticky lg:text-3xl top-0 text-xl flex justify-center items-center gap-4 text-center py-6 lg:h-[100px] h-[70px] 
+          className={`sticky lg:text-2xl top-0 text-xl flex justify-center items-center gap-4 text-center py-6 lg:h-[70px] h-[70px] 
           font-bold border-b-2  rounded-t-xl  hover:text-yellow-400 z-30 rounded-b-3xl`}>
         <BiSolidCollection />
         Task Collection
