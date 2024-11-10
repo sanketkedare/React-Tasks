@@ -6,18 +6,21 @@ const image =
 
 // Task Introductory Text Component
 
-const TaskIntroText = () => 
-{
-  const {theme} = useContext(TheamContext)
+const TaskIntroText = () => {
+  const { theme } = useContext(TheamContext);
   return (
-    <div style={{background: theme.background}}
-    className="lg:px-10 px-4 mx-2 relative lg:text-[30px] text-[20px] m-auto h-screen flex items-center justify-center text-center  rounded-full shadow-sm  bg-opacity-5 hover:bg-opacity-4">
+    <div
+      style={{ background: theme.background }}
+      className="lg:px-10 px-4 mx-2 relative lg:text-[30px] text-[20px] m-auto h-screen flex items-center justify-center text-center rounded-full shadow-sm bg-opacity-5 hover:bg-opacity-4"
+    >
       <img
         src={image}
-        className={`absolute ${theme.name === "Dark" ? 'opacity-25' : 'opacity-15'} overflow-hidden w-full h-full rounded-full`}
+        className={`absolute ${
+          theme.name === "Dark" ? "opacity-25" : "opacity-15"
+        } overflow-hidden w-full h-full rounded-full`}
       />
       <p className="lg:w-full w-[70%] italic z-10">
-        " We have a collection of tasks asked during coding rounds. <br />
+        "We have a collection of tasks asked during coding rounds. <br />
         Explore these tasks and practice to strengthen your coding expertise in
         React. <br />
         Join us and collaborate with our team for growth and learning."

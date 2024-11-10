@@ -15,39 +15,38 @@ const Introduction = () => {
 
   return (
     <motion.div className="h-screen flex items-top mx-10" {...introMotion}>
-      <div className=" lg:w-[70%] w-full lg:mt-4 mt-14">
+      <div className="lg:w-[70%] w-full lg:mt-4 mt-14">
         <motion.p
           className={`lg:text-[20px] italic ${
             theme.name === "Dark" ? "text-yellow-500" : "text-yellow-900"
           } my-10 font-bold`}
         >
-          Hey, Confused Fresher !!
+          Hey, Confused Fresher!
         </motion.p>
-        <p className="text-[30px]  my-10">
-          Learning Completed, But What next ?
+        <p className="text-[30px] my-10">
+          Learning Completed, But What's Next?
         </p>
         <h1 className="lg:text-[90px] text-[40px] italic my-10">
-          Here is an
+          Here is a
           <span className="text-red-500 font-semibold not-italic">
-            {" "}
-            One stop{" "}
+            {" "}One-Stop{" "}
           </span>
-          solution for the Beginers !!
+          solution for Beginners!
         </h1>
-        <div className="flex lg:gap-10 gap-3 z-20  mt-10 ">
+        <div className="flex lg:gap-10 gap-3 z-20 mt-10">
           <Link
             to={GITHUB_URL}
             target="_blank"
-            className="lg:text-sm  text-[12px] h-[50px] flex items-center justify-center shadow-inner border rounded-xl gap-3 p-3  bg-gray-900 hover:bg-gray-800   lg:w-[200px] w-[350px] font-bold text-white"
+            className="lg:text-sm text-[12px] h-[50px] flex items-center justify-center shadow-inner border rounded-xl gap-3 p-3 bg-gray-900 hover:bg-gray-800 lg:w-[200px] w-[350px] font-bold text-white"
           >
             <FaGithub />
-            Github Code
+            GitHub Code
           </Link>
 
           <Link
             to={LINKEDIN_URL}
             target="_blank"
-            className="shadow-sm lg:text-sm text-[12px] h-[50px] flex items-center justify-center  border rounded-xl gap-3 p-3  bg-gray-900 hover:bg-gray-800  lg:w-[200px] w-[350px] font-bold text-white"
+            className="shadow-sm lg:text-sm text-[12px] h-[50px] flex items-center justify-center border rounded-xl gap-3 p-3 bg-gray-900 hover:bg-gray-800 lg:w-[200px] w-[350px] font-bold text-white"
           >
             <FaLinkedin className="text-sky-300 bg-black" />
             <span>Sanket Kedare</span>
