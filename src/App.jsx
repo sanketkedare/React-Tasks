@@ -10,6 +10,7 @@ import DiwaliLights from "./Components/Diwali_Lights/DiwaliLights.jsx";
 import WelComePage from "./Pages/WelComePage.jsx";
 import UserProfile from "./Components/User_Profile/UserProfile.jsx";
 import ImageSlider from "./Components/Image_Slider/ImageSlider.jsx";
+import Calculator from "./Components/Calculator/Calculator.jsx";
 
 /**
  * App Component
@@ -35,6 +36,7 @@ function App() {
           <Route path="diwali-lights" element={<DiwaliLights />} />
           <Route path="user-profile" element={<UserProfile/>}/>
           <Route path="image-slider" element={<ImageSlider/>}/>
+          <Route path="calculator" element={<Calculator/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

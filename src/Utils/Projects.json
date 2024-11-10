@@ -47,11 +47,11 @@
     {
         "name": "Image Slider",
         "path": "image-slider",
-        "des": ""
+        "des": "The ImageSlider component is an animated image carousel using Framer Motion, cycling through images with auto-slide, manual navigation, and preloaded images for seamless transitions."
     },
     {
         "name": "Calculator",
         "path": "calculator",
-        "des": ""
+        "des":  "A responsive React-based calculator with real-time calculation display, clear functionality, and interactive buttons. Designed with a modern UI, it offers smooth transitions and enhanced user interaction"
     }
 ]

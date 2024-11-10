@@ -79,80 +79,117 @@ To set up the projects locally and start exploring, follow these steps:
 
 ## Project Showcase
 
-Each project in this repository showcases different aspects of React development. Explore the descriptions, features, and live demo links below:
+This repository includes a collection of projects showcasing various aspects of React development. Each project demonstrates unique functionalities, UI designs, and interactive elements to enhance user experience. Explore the descriptions, features, and paths to learn more.
+
+---
 
 ### 1. Password Generator
 - **Path:** `password-generator`
 - **Description:** Developed with React, Vite, and Tailwind CSS, this tool creates tailored passwords of varied lengths and complexities. Users can select letters-only, letters with numbers, letters with symbols, or a mix of all, ensuring strong, unique passwords for added security.
-- **[Live Demo](https://react-tasks-keh6.onrender.com/password-generator)**
 - **Features:**
   - Dynamic length selection
   - Options for letters, numbers, and symbols
   - Copy to clipboard functionality
 
+---
+
 ### 2. To-Do List
 - **Path:** `todo-list`
 - **Description:** A clean, efficient app for daily task management, built with React and Vite for optimized performance. It enables users to add, edit, or delete tasks, using a component-based design for seamless organization and workflow.
-- **[Live Demo](https://react-tasks-keh6.onrender.com/todo-list)**
 - **Features:**
   - Add, edit, and delete tasks
   - Component-based structure
   - User-friendly interface
 
+---
+
 ### 3. Comment Section
 - **Path:** `comment-section`
 - **Description:** An interactive space for users to exchange opinions and discuss topics. This app enables posting comments, replying to others, and engaging in constructive dialogue on shared interests or tech insights.
-- **[Live Demo](https://react-tasks-keh6.onrender.com/comment-section)**
 - **Features:**
   - Post comments and replies
   - Engage in threaded discussions
   - Upvote and downvote options
 
+---
+
 ### 4. Shooting Guns
 - **Path:** `shooting-guns`
 - **Description:** This project illustrates debouncing and throttling concepts through three unique gun models, each with its own firing mechanism. It visually demonstrates these essential programming techniques with engaging functionality.
-- **[Live Demo](https://react-tasks-keh6.onrender.com/shooting-guns)**
 - **Features:**
   - Interactive gun firing mechanics
   - Visual demonstration of debouncing and throttling
   - Engaging animations
 
+---
+
 ### 5. Diwali Gifts
 - **Path:** `diwali-gifts`
 - **Description:** An app for assigning Diwali gifts to friends and family, ensuring each gift is unique. It includes options to shuffle, assign, or reset as desired, designed with React for smooth, interactive experiences that bring festive joy.
-- **[Live Demo](https://react-tasks-keh6.onrender.com/diwali-gifts)**
 - **Features:**
   - Unique gift assignment per user
   - Shuffle and reset functionalities
   - Festive-themed interface
 
+---
+
 ### 6. Tic Tac Toe Game
 - **Path:** `tic-tac-toe`
 - **Description:** This React-based Tic Tac Toe game features a user-friendly interface for two players. It handles win or tie scenarios smoothly, delivering a fun and classic gaming experience in a digital format.
-- **[Live Demo](https://react-tasks-keh6.onrender.com/tic-tac-toe)**
 - **Features:**
   - Two-player interactive game board
   - Win and draw condition handling
   - Game reset option
 
+---
+
 ### 7. Fetch Posts
 - **Path:** `fetch-posts`
 - **Description:** This project teaches data fetching and storage in component state variables, with a focus on logical rendering, such as conditional rendering, and a better understanding of asynchronous code in React.
-- **[Live Demo](https://react-tasks-keh6.onrender.com/fetch-posts)**
 - **Features:**
   - Fetch and display data
   - Conditional rendering
   - Handling asynchronous functions
 
+---
+
 ### 8. Diwali Lights
 - **Path:** `diwali-lights`
 - **Description:** Explore conditional rendering in depth, featuring options for Static, Blinking, and Fading Lights based on user selection. The project utilizes `setInterval` to create dynamic lighting effects and includes controls to manage the display easily.
-- **[Live Demo](https://react-tasks-keh6.onrender.com/diwali-lights)**
 - **Features:**
   - Choose between Static, Blinking, or Fading Lights
   - Adjustable duration and control buttons
   - Dynamic lighting using `setInterval`
 
+---
+
+### 9. User Profile
+- **Path:** `user-profile`
+- **Description:** A User Profile Dashboard displaying user information with an option to edit details. Provides a straightforward interface for updating profile attributes.
+- **Features:**
+  - Display user information (name, email, profile picture)
+  - Edit functionality for name and email
+  - Simple, clean dashboard interface
+
+---
+
+### 10. Image Slider
+- **Path:** `image-slider`
+- **Description:** The ImageSlider component is an animated image carousel using Framer Motion, cycling through images with auto-slide, manual navigation, and preloaded images for seamless transitions.
+- **Features:**
+  - Auto and manual navigation
+  - Smooth, animated transitions
+  - Preloaded images for optimal performance
+
+---
+
+### 11. Calculator
+- **Path:** `calculator`
+- **Description:** A responsive React-based calculator with real-time calculation display, clear functionality, and interactive buttons. Designed with a modern UI, it offers smooth transitions and enhanced user interaction.
+- **Features:**
+  - Real-time calculations and display
+  - Clear and reset functionalities
+  - Interactive buttons for numbers and operators
 
 
 ## Contribution
