@@ -7,8 +7,8 @@ import { TheamContext } from "../../Utils/TheamContextComponent";
 
 // Introduction
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/sanket-kedare-5820401bb/";
-const GITHUB_URL = "https://github.com/sanketkedare/React-Tasks";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/sanket-kedare-5820401bb/";
+export const GITHUB_URL = "https://github.com/sanketkedare/React-Tasks";
 
 const Introduction = () => {
   const { theme } = useContext(TheamContext);
