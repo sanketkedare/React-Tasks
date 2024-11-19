@@ -53,5 +53,10 @@
         "name": "Calculator",
         "path": "calculator",
         "des":  "A responsive React-based calculator with real-time calculation display, clear functionality, and interactive buttons. Designed with a modern UI, it offers smooth transitions and enhanced user interaction"
+    },
+    {
+        "name": "Star Rating",
+        "path": "start-rating",
+        "des":"This React code implements a star rating component with interactive stars and a range input slider, allowing users to select a rating dynamically, updating the display in real-time."
     }
 ]
