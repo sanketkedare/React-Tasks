@@ -58,5 +58,10 @@
         "name": "Star Rating",
         "path": "start-rating",
         "des":"This React code implements a star rating component with interactive stars and a range input slider, allowing users to select a rating dynamically, updating the display in real-time."
+    },
+    {
+        "name": "Drag The Boll",
+        "path": "drag-ball",
+        "des":"The DragBall project is an interactive React application where users can drag a ball within a container. It uses useRef and useState for dynamic positioning and responsive user interaction."
     }
 ]

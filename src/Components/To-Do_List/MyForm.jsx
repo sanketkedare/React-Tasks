@@ -7,7 +7,13 @@ const MyForm = ({ setAllToDos }) => {
   const createToDo = () => {
     const obj = {
       id: useGenrateId(),
-      createdAt: Date.now(),
+      createdAt: new Date().toLocaleString("en-GB", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+      }), // Format: DD-MM-YY HH-MM
       name: toDo,
       progress: "UPCOMING", // Default progress
     };

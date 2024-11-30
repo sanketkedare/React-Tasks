@@ -12,6 +12,7 @@ import UserProfile from "./Components/User_Profile/UserProfile.jsx";
 import ImageSlider from "./Components/Image_Slider/ImageSlider.jsx";
 import Calculator from "./Components/Calculator/Calculator.jsx";
 import StarRatingPage from "./Pages/StarRatingPage.jsx";
+import DragBallPage from "./Pages/DragBallPage.jsx";
 
 /**
  * App Component
@@ -39,6 +40,7 @@ function App() {
           <Route path="image-slider" element={<ImageSlider/>}/>
           <Route path="calculator" element={<Calculator/>}/>
           <Route path="start-rating" element={<StarRatingPage/>}/>
+          <Route path="drag-ball" element={<DragBallPage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
